@@ -10,6 +10,11 @@ import java.util.Scanner;
 public class ParkeerGarage {
 
     static final int MAX_PARKEERDUUR = 24;
+    static final int PARKEERDUUR_LAAG_UREN = 3;
+    static final double PARKEERTARIEF_HOOG = 3.75;
+    static final double PARKEERTARIEF_LAAG = 2.75;
+    static final double KOSTEN_MAX = 25.00;
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -54,9 +59,10 @@ public class ParkeerGarage {
 
         // Stap 5: Druk een overzicht af
         System.out.println("\nParkeeroverzicht");
-        System.out.println("kenteken\t\turen\tbedrag");//TODO: uitlijning
+        System.out.printf("%8s%7s%8s\n", "kentekens", "uren", "bedrag");
+        //TODO: uitlijning
         for (int i = 0; i < aantalAutos; i++) {
-            System.out.printf("%s\t\t%d\t\t%.2f\n", kentekens[i], parkeerduur[i], parkeerkosten[i]);//TODO: uitlijning
+            System.out.printf("%8s%8s%8s\n", kentekens[i], parkeerduur[i], parkeerkosten[i]);//TODO: uitlijning
             // %s geeft een string weer, \t is een tab, %d geeft een decimale integer aan en %.2f rondt een double af op twee getallen na de komma.
         }
 
@@ -71,15 +77,15 @@ public class ParkeerGarage {
     public static double berekenParkeergeld(int mpParkeerduur) {
         double kosten;
 
-        if (mpParkeerduur <= 3) {
-            kosten = mpParkeerduur * 3.75; //De leraar gebruikt hier BASIS_TARIEF_UREN ofwel constanten, gebruik ook constanten
-        } else { //TODO: Definieer de constanten bovenaan
-            kosten = (3 * 3.75) + ((mpParkeerduur - 3) * 2.75);
+        if (mpParkeerduur <= PARKEERDUUR_LAAG_UREN) {
+            kosten = mpParkeerduur * PARKEERTARIEF_HOOG; //De leraar gebruikt hier BASIS_TARIEF_UREN ofwel constanten, gebruik ook constanten
+        } else {
+            kosten = (PARKEERDUUR_LAAG_UREN * PARKEERTARIEF_HOOG) + ((mpParkeerduur - PARKEERDUUR_LAAG_UREN) * PARKEERTARIEF_LAAG);
         }
 
         // Controleer op de maximum kosten
-        if (kosten > 25.00) { //De leraar gebruikt hier Math.min
-            kosten = 25.00; // Maximaal dagtarief
+        if (kosten > KOSTEN_MAX) { //De leraar gebruikt hier Math.min
+            kosten = KOSTEN_MAX; // Maximaal dagtarief
         }
 
         return kosten;
