@@ -54,9 +54,9 @@ public class ParkeerGarage {
 
         // Stap 5: Druk een overzicht af
         System.out.println("\nParkeeroverzicht");
-        System.out.println("kenteken\t\turen\tbedrag");
+        System.out.println("kenteken\t\turen\tbedrag");//TODO: uitlijning
         for (int i = 0; i < aantalAutos; i++) {
-            System.out.printf("%s\t\t%d\t\t%.2f\n", kentekens[i], parkeerduur[i], parkeerkosten[i]);
+            System.out.printf("%s\t\t%d\t\t%.2f\n", kentekens[i], parkeerduur[i], parkeerkosten[i]);//TODO: uitlijning
             // %s geeft een string weer, \t is een tab, %d geeft een decimale integer aan en %.2f rondt een double af op twee getallen na de komma.
         }
 
@@ -73,7 +73,7 @@ public class ParkeerGarage {
 
         if (mpParkeerduur <= 3) {
             kosten = mpParkeerduur * 3.75; //De leraar gebruikt hier BASIS_TARIEF_UREN ofwel constanten, gebruik ook constanten
-        } else { //Definieer de constanten bovenaan
+        } else { //TODO: Definieer de constanten bovenaan
             kosten = (3 * 3.75) + ((mpParkeerduur - 3) * 2.75);
         }
 
