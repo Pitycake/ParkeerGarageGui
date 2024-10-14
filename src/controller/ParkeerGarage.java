@@ -53,7 +53,7 @@ public class ParkeerGarage {
                 parkeerduur[i] = scanner.nextInt();
             }
 
-            // Stap 4: Bereken de parkeerkosten
+            // Stap 4: Bereken de ritkosten
             parkeerkosten[i] = berekenParkeergeld(parkeerduur[i]);
         }
 
