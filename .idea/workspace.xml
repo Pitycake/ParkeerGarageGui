@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="202f2a06-eff4-4238-8c97-7e5077bda5de" name="Changes" comment="ParkeerGarageGui gemaakt en toegevoegd">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ParkeerGarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ParkeerGarage.java" afterDir="false" />
-    </list>
+    <list default="true" id="202f2a06-eff4-4238-8c97-7e5077bda5de" name="Changes" comment="Laatste aanpassingen met leraar commentaar toegevoegd, even goed nakijken" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,11 +89,28 @@
       <option name="project" value="LOCAL" />
       <updated>1728895944528</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ParkeerGarageGui gemaakt en toegevoegd">
+      <option name="closed" value="true" />
+      <created>1728906679104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728906679104</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Laatste aanpassingen met leraar commentaar toegevoegd, even goed nakijken">
+      <option name="closed" value="true" />
+      <created>1728906707610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728906707610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ParkeerGarageGui gemaakt en toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="ParkeerGarageGui gemaakt en toegevoegd" />
+    <MESSAGE value="Laatste aanpassingen met leraar commentaar toegevoegd, even goed nakijken" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laatste aanpassingen met leraar commentaar toegevoegd, even goed nakijken" />
   </component>
 </project>

@@ -31,7 +31,7 @@ public class ParkeerGarage {
         for (int i = 0; i < aantalAutos; i++) {
             System.out.println("Auto " + (i + 1)); // kan ook Systemout.printf("Auto %d", i + 1); System.out.println("Auto " + (i + 1));
             //Vraag kenteken
-            System.out.print(    "Kenteken: "); //4 spaties gebruikt om inspringing te verwezenlijken
+            System.out.print("    Kenteken: "); //4 spaties gebruikt om inspringing te verwezenlijken
             kentekens[i] = scanner.next(); // De [i] verwijst naar de iteratie die draait op dat moment
             //Vraag geparkeerde uren
             do {
