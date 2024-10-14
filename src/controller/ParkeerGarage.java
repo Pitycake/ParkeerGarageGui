@@ -98,6 +98,6 @@ public class ParkeerGarage {
 //        double totaal = 0.0;
 //        for (int i= 0; i < mpParkeerkosten.length; i++) {
 //            totaal = totaal + mpParkeerkosten[i];
-//        }
+//        }..
     }
 }
