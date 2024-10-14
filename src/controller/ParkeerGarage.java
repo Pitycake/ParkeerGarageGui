@@ -60,10 +60,11 @@ public class ParkeerGarage {
         // Stap 5: Druk een overzicht af
         System.out.println("\nParkeeroverzicht");
         System.out.printf("%8s%7s%8s\n", "kentekens", "uren", "bedrag");
-        //TODO: uitlijning
+
         for (int i = 0; i < aantalAutos; i++) {
-            System.out.printf("%8s%8s%8s\n", kentekens[i], parkeerduur[i], parkeerkosten[i]);//TODO: uitlijning
-            // %s geeft een string weer, \t is een tab, %d geeft een decimale integer aan en %.2f rondt een double af op twee getallen na de komma.
+            System.out.printf("%8s%8s%8s\n", kentekens[i], parkeerduur[i], parkeerkosten[i]);
+            // %s geeft een string weer, \t is een tab, %d geeft een decimale integer aan en %.2f rondt een double af
+            // op twee getallen na de komma. het nummer staat voor de aantal spaties
         }
 
         // Stap 6: Bereken het totaal van alle parkeerkosten
